@@ -1,11 +1,17 @@
-import React from 'react'
-import "./App.css"
-function App() {
+import React from 'react';
+import MovieEmbed from './components/MovieEmbed';
+import TVShowEmbed from './components/TVShowEmbed';
+import EpisodeEmbed from './components/EpisodeEmbed';
+
+const App = () => {
   return (
     <div>
-      <h1>Hello world</h1>
+      <h1>Embed URL Generator</h1>
+      <MovieEmbed />
+      <TVShowEmbed />
+      <EpisodeEmbed />
     </div>
-  )
-}
-import "./App.css"
-export default App
+  );
+};
+
+export default App;
