@@ -1,0 +1,15 @@
+{
+  "name": "xstreaming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm install --prefix server && npm run dev --prefix server\" \"npm install --prefix client && npm run dev --prefix client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
