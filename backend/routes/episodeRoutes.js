@@ -3,8 +3,8 @@ import { getLatestEpisodes, getEpisodeEmbedUrl } from '../controllers/episodeCon
 
 const router = express.Router();
 
-router.get('/latest/:page', getLatestEpisodes);
+router.route('/latest/:page').get(getLatestEpisodes)
 
-router.get('/embed', getEpisodeEmbedUrl);
+router.route('/embed').get(getEpisodeEmbedUrl);
 
-export default router;
+export default router

@@ -1,9 +1,10 @@
-const express = require('express');
-const { getLatestMovies, getMovieEmbedUrl } = require('../controllers/movieController');
+import express from 'express'
+import {getLatestMovies,getMovieEmbedUrl} from '../controllers/movieController.js'
+
 const router = express.Router();
 
 router.get('/latest/:page', getLatestMovies);
 
 router.get('/embed', getMovieEmbedUrl);
 
-module.exports = router;
+export default router

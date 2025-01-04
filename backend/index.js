@@ -14,7 +14,11 @@ app.use('/api/movies', movieRoutes);
 app.use('/api/tvshows', tvShowRoutes);
 app.use('/api/episodes', episodeRoutes);
 
-const PORT = 5000;
+app.get('/',(req,res)=>{
+    res.send("HII from backend")
+})
+
+const PORT = 1000||10000;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
