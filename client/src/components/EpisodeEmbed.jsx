@@ -30,7 +30,7 @@ const EpisodeEmbed = () => {
       <h2>Episode Embed</h2>
       <input
         type="text"
-        placeholder="Enter TV Show ID (IMDb or TMDb)"
+        placeholder="Enter TV Show ID (TMDb)"
         value={tvShowId}
         onChange={(e) => setTvShowId(e.target.value)}
       />

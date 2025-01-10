@@ -7,7 +7,7 @@ const MovieEmbed = () => {
 
   const generateEmbedUrl = () => {
     if (!movieId) {
-      alert('Please provide a movie ID (IMDb or TMDb).');
+      alert('Please provide a movie ID (TMDb).');
       return;
     }
     setEmbedUrl(`https://vidsrc.me/embed/movie?tmdb=${movieId}`);
@@ -26,7 +26,7 @@ const MovieEmbed = () => {
       <h2>Movie Embed</h2>
       <input
         type="text"
-        placeholder="Enter Movie ID (IMDb or TMDb)"
+        placeholder="Enter Movie ID (TMDb)"
         value={movieId}
         onChange={(e) => setMovieId(e.target.value)}
       />
